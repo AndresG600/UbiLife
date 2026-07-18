@@ -1,0 +1,25 @@
+# Variables de entornow
+.env
+.env.local
+.env*.local
+.venv
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Entorno virtual
+
+venv/
+ENV/
+.venv
+.md
+
+# Logs
+/logs
+*.log
