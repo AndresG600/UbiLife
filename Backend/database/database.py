@@ -16,7 +16,7 @@ def get_database():
         return _db
     
     try:
-        uri = os.getenv("MONGO_URI")
+        uri = os.getenv("MONGO_URL")
         db_name = os.getenv("DATABASE_NAME", "UbiLife")
         _client = AsyncIOMotorClient(uri)
         _db = _client[db_name]
