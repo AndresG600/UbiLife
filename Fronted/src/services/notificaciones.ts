@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';
 import axios from 'axios';
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL;
+const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://10.0.2.2:8000';
 const IS_EXPO_GO = Constants.appOwnership === 'expo';
 
 // En Expo Go SDK 53+ el módulo expo-notifications no soporta push remoto.

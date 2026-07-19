@@ -9,6 +9,9 @@ dist/
 web-build/
 expo-env.d.ts
 
+# Environment variables — NUNCA subir a git
+.env
+
 # Native
 .kotlin/
 *.orig.*
@@ -24,7 +27,7 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-.env
+
 .venv
 
 # debug
@@ -36,8 +39,7 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+
 
 # typescript
 *.tsbuildinfo

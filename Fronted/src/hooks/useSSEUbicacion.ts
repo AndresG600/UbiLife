@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import EventSource from 'react-native-sse';
 import * as SecureStore from 'expo-secure-store';
 
-const API_URL        = process.env.EXPO_PUBLIC_API_URL;
+const API_URL        = process.env.EXPO_PUBLIC_API_URL ?? 'http://10.0.2.2:8000';
 const DELAY_BASE_MS  = 5000;
 const DELAY_MAX_MS   = 60000;
 const MAX_REINTENTOS = 10;
